@@ -4002,7 +4002,7 @@ input, select, textarea {
 .inner.special{
 	width: 80%;
 	align-content: center;
-	transform: translateY(-2.5em);
+	transform: translateY(-1.5em);
 }
 
 /* About Row Styles */
@@ -4042,15 +4042,58 @@ input, select, textarea {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 60em) {
+/* @media screen and (max-width: 768px) {
     .about-row {
         flex-direction: column;
     }
 
     .about-image, .about-text {
-        text-align: left;
+        text-align: middle;
         padding: 0 15px;
     }
+} */
+
+@media screen and (max-width: 1280px) {
+
+	#about-row .image {
+		width: 45%;
+	}
+
+	#about-row .content {
+		width: 55%;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+
+	#about-row {
+		display: block;
+	}
+
+	#about-row br {
+			display: none;
+		}
+
+		#about-row .image {
+			width: 100%;
+		}
+
+		#about-row .content {
+			padding: 4em 3em 2em 3em ;
+			max-width: none;
+			text-align: center;
+			width: 100%;
+		}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	.spotlight .content {
+		padding: 3em 2em 1em 2em ;
+	}
+
 }
 
 /* Flexbox container for the button */
