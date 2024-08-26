@@ -3998,13 +3998,21 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
+/* Section - ABOUT ME */
+.inner.special{
+	width: 80%;
+	align-content: center;
+	transform: translateY(-2.5em);
+}
+
 /* About Row Styles */
 #about-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 -15px;
+    margin: 0 -25px;
+	transform: translateY(-4em);
 }
 
 /* About Image Styles */
@@ -4029,7 +4037,7 @@ input, select, textarea {
 }
 
 #about-text p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.6;
 }
 
@@ -4043,4 +4051,46 @@ input, select, textarea {
         text-align: left;
         padding: 0 15px;
     }
+}
+
+/* Flexbox container for the button */
+#project-button{
+    position: relative; /* If you want it relative to its container */
+    bottom: -10px; /* Adds some space from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+	text-decoration: none;
+}
+
+/* Anchor styling */
+#project-button p {
+	font-size: 0.8;
+    text-decoration: none !important;
+    color: inherit;
+    position: relative;
+}
+
+/* Arrow styling */
+#project-button p:after {
+	content: '';
+    background-image: url("images/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -40px; /* Adjust as needed to place arrow */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1.5em;
+    height: 1.5em;
 }
