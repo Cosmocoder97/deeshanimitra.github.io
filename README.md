@@ -1,3 +1,3 @@
-## Ritesh Bachhar's Personal website
+## Deeshani Mitra's Personal website
 
-[https://riteshbachhar.github.io/](https://riteshbachhar.github.io/)
+[https://deeshanimitra.github.io/](https://deeshanimitra.github.io/)
